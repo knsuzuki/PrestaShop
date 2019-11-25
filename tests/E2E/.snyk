@@ -1,0 +1,17 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - selenium-standalone > request > extend:
+        patched: '2019-11-25T23:35:37.089Z'
+  SNYK-JS-LODASH-450202:
+    - webdriverio > gaze > globule > lodash:
+        patched: '2019-11-25T23:35:37.089Z'
+  'npm:request:20160119':
+    - req > request:
+        patched: '2019-11-25T23:35:37.089Z'
+  'npm:stringstream:20180511':
+    - selenium-standalone > request > stringstream:
+        patched: '2019-11-25T23:35:37.089Z'
