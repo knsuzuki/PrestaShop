@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "123bf9059cec742e89dccd5250b36256",
+    "content-hash": "4613229eb77a4a15fdf963747d55cf6e",
     "packages": [
         {
             "name": "analog/analog",
@@ -449,31 +449,35 @@
         },
         {
             "name": "defuse/php-encryption",
-            "version": "2.0.3",
+            "version": "v2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/defuse/php-encryption.git",
-                "reference": "2c6fea3d9a4eaaa8cef86b2a89f3660818117b33"
+                "reference": "0f407c43b953d571421e0020ba92082ed5fb7620"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/defuse/php-encryption/zipball/2c6fea3d9a4eaaa8cef86b2a89f3660818117b33",
-                "reference": "2c6fea3d9a4eaaa8cef86b2a89f3660818117b33",
+                "url": "https://api.github.com/repos/defuse/php-encryption/zipball/0f407c43b953d571421e0020ba92082ed5fb7620",
+                "reference": "0f407c43b953d571421e0020ba92082ed5fb7620",
                 "shasum": ""
             },
             "require": {
                 "ext-openssl": "*",
-                "paragonie/random_compat": "~2.0",
+                "paragonie/random_compat": ">= 2",
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "nikic/php-parser": "^2.0"
+                "nikic/php-parser": "^2.0|^3.0|^4.0",
+                "phpunit/phpunit": "^4|^5"
             },
+            "bin": [
+                "bin/generate-defuse-key"
+            ],
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "src"
-                ]
+                "psr-4": {
+                    "Defuse\\Crypto\\": "src"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -504,7 +508,7 @@
                 "security",
                 "symmetric key cryptography"
             ],
-            "time": "2016-10-10T15:20:26+00:00"
+            "time": "2018-07-24T23:27:56+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1531,15 +1535,15 @@
             "authors": [
                 {
                     "name": "André Rothe",
-                    "role": "Committer",
                     "email": "phosco@gmx.de",
-                    "homepage": "https://www.phosco.info"
+                    "homepage": "https://www.phosco.info",
+                    "role": "Committer"
                 },
                 {
                     "name": "Justin Swanhart",
-                    "role": "Owner",
                     "email": "greenlion@gmail.com",
-                    "homepage": "http://code.google.com/u/greenlion@gmail.com/"
+                    "homepage": "http://code.google.com/u/greenlion@gmail.com/",
+                    "role": "Owner"
                 }
             ],
             "description": "A pure PHP SQL (non validating) parser w/ focus on MySQL dialect of SQL",
@@ -1708,6 +1712,7 @@
                 "log",
                 "plugin"
             ],
+            "abandoned": true,
             "time": "2014-10-13T03:31:43+00:00"
         },
         {
@@ -1759,6 +1764,7 @@
                 }
             ],
             "description": "Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function.",
+            "abandoned": true,
             "time": "2018-07-31T13:22:33+00:00"
         },
         {
@@ -1809,6 +1815,7 @@
                 "Guzzle",
                 "stream"
             ],
+            "abandoned": true,
             "time": "2014-10-12T19:18:40+00:00"
         },
         {
@@ -6939,19 +6946,19 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "role": "Lead Developer",
                     "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org"
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Armin Ronacher",
-                    "role": "Project Founder",
-                    "email": "armin.ronacher@active-4.com"
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
                 },
                 {
                     "name": "Twig Team",
-                    "role": "Contributors",
-                    "homepage": "https://twig.symfony.com/contributors"
+                    "homepage": "https://twig.symfony.com/contributors",
+                    "role": "Contributors"
                 }
             ],
             "description": "Twig, the flexible, fast, and secure template language for PHP",
@@ -7319,6 +7326,7 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
+            "abandoned": "psr/container",
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
@@ -7495,8 +7503,8 @@
             "authors": [
                 {
                     "name": "Frank Kleine",
-                    "role": "Developer",
-                    "homepage": "http://frankkleine.de/"
+                    "homepage": "http://frankkleine.de/",
+                    "role": "Developer"
                 }
             ],
             "description": "Virtual file system to mock the real file system in unit tests.",
