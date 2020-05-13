@@ -38,7 +38,7 @@
         "nikic/php-parser": "^3",
         "paragonie/random_compat": "^1.4|^2.0",
         "pear/archive_tar": "^1.4.6",
-        "pelago/emogrifier": "^2.1",
+        "pelago/emogrifier": "^3.1",
         "phpoffice/phpspreadsheet": "~1.5",
         "prestashop/blockreassurance": "^4.1",
         "prestashop/circuit-breaker": "^3.0",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "123bf9059cec742e89dccd5250b36256",
+    "content-hash": "458a96af40670ba0755cccd2a3b4c554",
     "packages": [
         {
             "name": "analog/analog",
@@ -1531,15 +1531,15 @@
             "authors": [
                 {
                     "name": "André Rothe",
-                    "role": "Committer",
                     "email": "phosco@gmx.de",
-                    "homepage": "https://www.phosco.info"
+                    "homepage": "https://www.phosco.info",
+                    "role": "Committer"
                 },
                 {
                     "name": "Justin Swanhart",
-                    "role": "Owner",
                     "email": "greenlion@gmail.com",
-                    "homepage": "http://code.google.com/u/greenlion@gmail.com/"
+                    "homepage": "http://code.google.com/u/greenlion@gmail.com/",
+                    "role": "Owner"
                 }
             ],
             "description": "A pure PHP SQL (non validating) parser w/ focus on MySQL dialect of SQL",
@@ -1708,6 +1708,7 @@
                 "log",
                 "plugin"
             ],
+            "abandoned": true,
             "time": "2014-10-13T03:31:43+00:00"
         },
         {
@@ -1759,6 +1760,7 @@
                 }
             ],
             "description": "Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function.",
+            "abandoned": true,
             "time": "2018-07-31T13:22:33+00:00"
         },
         {
@@ -1809,6 +1811,7 @@
                 "Guzzle",
                 "stream"
             ],
+            "abandoned": true,
             "time": "2014-10-12T19:18:40+00:00"
         },
         {
@@ -3119,34 +3122,34 @@
         },
         {
             "name": "pelago/emogrifier",
-            "version": "v2.1.1",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MyIntervals/emogrifier.git",
-                "reference": "8ee7fb5ad772915451ed3415c1992bd3697d4983"
+                "reference": "f6a5c7d44612d86c3901c93f1592f5440e6b2cd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MyIntervals/emogrifier/zipball/8ee7fb5ad772915451ed3415c1992bd3697d4983",
-                "reference": "8ee7fb5ad772915451ed3415c1992bd3697d4983",
+                "url": "https://api.github.com/repos/MyIntervals/emogrifier/zipball/f6a5c7d44612d86c3901c93f1592f5440e6b2cd8",
+                "reference": "f6a5c7d44612d86c3901c93f1592f5440e6b2cd8",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
-                "php": "^5.5.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0",
-                "symfony/css-selector": "^3.4.0 || ^4.0.0"
+                "php": "^5.6 || ~7.0 || ~7.1 || ~7.2 || ~7.3 || ~7.4",
+                "symfony/css-selector": "^2.8 || ^3.0 || ^4.0 || ^5.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.2.0",
-                "phpmd/phpmd": "^2.6.0",
-                "phpunit/phpunit": "^4.8.0",
-                "squizlabs/php_codesniffer": "^3.3.2"
+                "friendsofphp/php-cs-fixer": "^2.15.3",
+                "phpmd/phpmd": "^2.7.0",
+                "phpunit/phpunit": "^5.7.27",
+                "squizlabs/php_codesniffer": "^3.5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "4.0.x-dev"
                 }
             },
             "autoload": {
@@ -3160,16 +3163,6 @@
             ],
             "authors": [
                 {
-                    "name": "John Reeve",
-                    "email": "jreeve@pelagodesign.com"
-                },
-                {
-                    "name": "Cameron Brooks"
-                },
-                {
-                    "name": "Jaime Prado"
-                },
-                {
                     "name": "Oliver Klee",
                     "email": "github@oliverklee.de"
                 },
@@ -3178,8 +3171,18 @@
                     "email": "zoli.szabo+github@gmail.com"
                 },
                 {
+                    "name": "John Reeve",
+                    "email": "jreeve@pelagodesign.com"
+                },
+                {
                     "name": "Jake Hotson",
                     "email": "jake@qzdesign.co.uk"
+                },
+                {
+                    "name": "Cameron Brooks"
+                },
+                {
+                    "name": "Jaime Prado"
                 }
             ],
             "description": "Converts CSS styles into inline style attributes in your HTML code",
@@ -3189,7 +3192,7 @@
                 "email",
                 "pre-processing"
             ],
-            "time": "2018-12-10T10:36:30+00:00"
+            "time": "2019-12-26T19:37:31+00:00"
         },
         {
             "name": "phpoffice/phpspreadsheet",
@@ -6939,19 +6942,19 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "role": "Lead Developer",
                     "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org"
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Armin Ronacher",
-                    "role": "Project Founder",
-                    "email": "armin.ronacher@active-4.com"
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
                 },
                 {
                     "name": "Twig Team",
-                    "role": "Contributors",
-                    "homepage": "https://twig.symfony.com/contributors"
+                    "homepage": "https://twig.symfony.com/contributors",
+                    "role": "Contributors"
                 }
             ],
             "description": "Twig, the flexible, fast, and secure template language for PHP",
@@ -7319,6 +7322,7 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
+            "abandoned": "psr/container",
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
@@ -7495,8 +7499,8 @@
             "authors": [
                 {
                     "name": "Frank Kleine",
-                    "role": "Developer",
-                    "homepage": "http://frankkleine.de/"
+                    "homepage": "http://frankkleine.de/",
+                    "role": "Developer"
                 }
             ],
             "description": "Virtual file system to mock the real file system in unit tests.",
